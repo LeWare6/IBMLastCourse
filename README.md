@@ -21,25 +21,26 @@ Help a new company (Space Y) determine the price of its rocket launches by compi
 
 ## Methodology
 
+The project was developed in Python using different libraries such as _BeautifulSoup, Pandas, Sqlite3, Numpy, Seaborn, Folium_ and _Dash_.
+
 More detail about the methodology and most important results of each stage can be found in the following presentation: `Presentation_Winning_Space_Race_with_Data Science.pdf`
 
-**Data Collection**
+#### Data Collection
 - Using SpaceX API: `1_1_Data_Collection_with_API.ipynb`
 - Performing Web Scraping with BeautifulSoup on Wikipedia: `1_2_Data_Collection_with_Web_Scraping.ipynb`
 
-**Data Wrangling**
+#### Data Wrangling
 - One hot encoding was applied to categorical values, and data cleaning of null values and non-relevant columns: `2_Data_Wrangling.ipynb`
 
-**Exploratory Data Analysis (EDA)**
+#### Exploratory Data Analysis (EDA)
 - Performing SQL queries: `3_1_EDA_with_SQL.ipynb`
 - Creating visualizations with Seaborn: `3_2_EDA_with_Data_Visualization.ipynb`
 
-**Interactive visual analytics**
-Interactive Visual Analysis by creating Dashboard
+#### Interactive Visual Analytics
 - Building an interactive map with Folium: `4_1_Interactive_Data_Analytics_with_Folium.ipynb`
 - Build a Dashboard with Plotly Dash: `4_2_Spacex_Dash_App.py`
 
-**Machine Learning Predictive Analysis**
+#### Machine Learning Predictive Analysis
 - Training classification models, including Logistic Regression, Support Vector Machine (SVM), Decision Trees and K-nearest neighbours (KNN): `5_ML_Predictive_Analysis.ipynb`
 
 
