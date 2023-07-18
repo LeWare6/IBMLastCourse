@@ -21,35 +21,30 @@ Help a new company (Space Y) determine the price of its rocket launches by compi
 
 ## Methodology
 
-Key files of interest in this directory are:
-wrangle_act.ipynb: code for gathering, assessing, cleaning, analyzing, and visualizing data
-wrangle_report.html: documentation for data wrangling steps: gather, assess, and clean
-act_report.html: documentation of analysis and insights into final data
-twitter_archive_enhanced.csv: Initial dataset
-image_predictions.tsv: file downloaded programmatically
-tweet_json.txt: file constructed via API
-twitter_archive_master.csv: combined and cleaned data
+The project was developed in Python using different libraries such as _BeautifulSoup, Pandas, Sqlite3, Numpy, Seaborn, Folium_ and _Dash_.
 
-Data Collection from 2 sources - i) SpaceX API & ii) Webscrapping from wikiepdia
+More detail about the methodology and most important results of each stage can be found in the following presentation: `Presentation_Winning_Space_Race_with_Data Science.pdf`
 
-Data Wrangling - Collected data was enriched by creating a landing outcome label based on outcome data after summarizing and analyzing features
+#### Data Collection
+- Using SpaceX API: `1_1_Data_Collection_with_API.ipynb`
+- Performing Web Scraping with BeautifulSoup on Wikipedia: `1_2_Data_Collection_with_Web_Scraping.ipynb`
 
-EDA using SQL & Visualization
+#### Data Wrangling
+- One hot encoding was applied to categorical values, and data cleaning of null values and non-relevant columns: `2_Data_Wrangling.ipynb`
 
-Interactive Visual Analysis by creating Dashboard
+#### Exploratory Data Analysis (EDA)
+- Performing SQL queries: `3_1_EDA_with_SQL.ipynb`
+- Creating visualizations with Seaborn: `3_2_EDA_with_Data_Visualization.ipynb`
 
-Machine Learning Predictive Analysis using Classification Models - Data that was collected until this step were normalized, divided in training and test data sets and evaluated by four different classification models (Logistic Regression, Support Vector Model, Decision Tree & K Nearest Neighbours Model), being the accuracy of each model evaluated using different combinations of parameters.
+#### Interactive Visual Analytics
+- Building an interactive map with Folium: `4_1_Interactive_Data_Analytics_with_Folium.ipynb`
+- Build a Dashboard with Plotly Dash: `4_2_Spacex_Dash_App.py`
 
-- `1_1_Data_Collection_with_API.ipynb`
-- `1_2_Data_Collection_with_Web_Scraping.ipynb`
-- `2_Data_Wrangling.ipynb`
-- `3_1_EDA_with_SQL.ipynb`
-- `3_2_EDA_with_Data_Visualization.ipynb`
-- `4_1_Interactive_Data_Analytics_with_Folium.ipynb`
-- `4_2_Spacex_Dash_App.py`
-- `5_ML_Predictive_Analysis.ipynb`
+#### Machine Learning Predictive Analysis
+- Training classification models, including Logistic Regression, Support Vector Machine (SVM), Decision Trees and K-nearest neighbours (KNN): `5_ML_Predictive_Analysis.ipynb`
 
-## Conclusion
+
+## Conclusions
 
 - The launch success rate has increased since 2013.
 - The success rate improved as the flight number increases in CCAFS SLC 40.
