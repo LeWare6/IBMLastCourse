@@ -6,9 +6,20 @@ This project served as an opportunity for me to apply the skills I acquired duri
 
 ## Problem Statement
 
-SpaceX is successful because their rocket launches are relatively inexpensive. SpaceX advertises Falcon 9 rocket launches on its website with a cost of 62 million dollars; other providers cost upwards of 165 million dollars each, much of the savings is because SpaceX can reuse the first stage. Therefore, if we can determine if the first stage will land, we can determine the cost of a launch. Spaces X’s Falcon 9 launch like regular rockets. There are three stages of a rocket launch. The payload is enclosed in the fairings. Stage two, or the second stage, helps bring the payload to orbit, but most of the work is done by the first stage. This stage does most of the work and is much larger than the second stage. This stage is quite large and expensive. Unlike other rocket providers, SpaceX's Falcon 9 can recover the first stage. Sometimes the first stage does not land. Sometimes it will crash. Other times, Space X will sacrifice the first stage due to the mission parameters like payload, orbit, and customer.
+SpaceX has achieved remarkable success due to the cost-effectiveness of its rocket launches. The company promotes the Falcon 9 rocket launches on their website, advertising a price of $62 million, while other providers spend more than $165 million for each launch. This substantial cost-saving is primarily attributed to SpaceX's ability to reuse the first stage of their rockets. Consequently, determining whether the first stage will land successfully becomes crucial in estimating the launch cost.
 
-In this project, you will take the role of a data scientist working for a new rocket company - Space Y that would like to compete with SpaceX founded by Billionaire industrialist Allon Musk. My job is to determine the price of each launch. I did this by gathering information about SpaceX and creating dashboards for the team. I also determined if SpaceX will reuse the first stage. Instead of using rocket science to determine if the first stage will land successfully, I trained a machine learning model and use public information to predict if SpaceX will reuse the first stage.
+The Falcon 9 launch process follows a standard rocket pattern consisting of two stages. 
+
+![image](https://github.com/julionakama/SpaceX_Launch_Analysis/assets/123141709/3f486e7f-e248-43fc-8c48-fd82b069cfd6)
+
+The payload is secured within the fairings, and the second stage aids in propelling the payload to orbit, although most of the work is performed by the first stage, which is considerably larger than the second stage. 
+
+Unlike other rocket providers, SpaceX has developed the capability to recover and reuse the first stage, valued at 70% of the total cost of the rocket. However, there are instances where the first stage may not land successfully, resulting in a crash. Additionally, SpaceX may intentionally forgo recovering the first stage based on mission parameters such as payload requirements, desired orbit, or customer preferences.
+
+## Objective
+Help a new company (Space Y) determine the price of its rocket launches by compiling and analyzing Space X's track record of success in landing its first stages, creating dashboards and predicting the first stages' reuse with machine learning models.
+
+## Methodology
 
 Key files of interest in this directory are:
 wrangle_act.ipynb: code for gathering, assessing, cleaning, analyzing, and visualizing data
@@ -18,5 +29,16 @@ twitter_archive_enhanced.csv: Initial dataset
 image_predictions.tsv: file downloaded programmatically
 tweet_json.txt: file constructed via API
 twitter_archive_master.csv: combined and cleaned data
+
+Data Collection from 2 sources - i) SpaceX API & ii) Webscrapping from wikiepdia
+
+Data Wrangling - Collected data was enriched by creating a landing outcome label based on outcome data after summarizing and analyzing features
+
+EDA using SQL & Visualization
+
+Interactive Visual Analysis by creating Dashboard
+
+Machine Learning Predictive Analysis using Classification Models - Data that was collected until this step were normalized, divided in training and test data sets and evaluated by four different classification models (Logistic Regression, Support Vector Model, Decision Tree & K Nearest Neighbours Model), being the accuracy of each model evaluated using different combinations of parameters.
+
 
 
