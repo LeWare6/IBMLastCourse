@@ -1,6 +1,6 @@
 # SpaceX launch analysis
 
-This Capstone project from IBM Data Science Professional Certificate allowed me to apply the skills I acquired during the entire IBM program I completed over a span of approximately five months. By utilizing real-world datasets, I extracted, cleaned, explored, and analyzed data to gain valuable insights.
+This capstone project from IBM Data Science Professional Certificate allowed me to apply the skills I acquired during the entire IBM program I completed over a span of approximately five months. By utilizing real-world datasets, I extracted, cleaned, explored, and analyzed data to gain valuable insights.
 
 ## Problem Statement
 
