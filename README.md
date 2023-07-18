@@ -40,5 +40,26 @@ Interactive Visual Analysis by creating Dashboard
 
 Machine Learning Predictive Analysis using Classification Models - Data that was collected until this step were normalized, divided in training and test data sets and evaluated by four different classification models (Logistic Regression, Support Vector Model, Decision Tree & K Nearest Neighbours Model), being the accuracy of each model evaluated using different combinations of parameters.
 
+- `1_1_Data_Collection_with_API.ipynb`
+- `1_2_Data_Collection_with_Web_Scraping.ipynb`
+- `2_Data_Wrangling.ipynb`
+- `3_1_EDA_with_SQL.ipynb`
+- `3_2_EDA_with_Data_Visualization.ipynb`
+- `4_1_Interactive_Data_Analytics_with_Folium.ipynb`
+- `4_2_Spacex_Dash_App.py`
+- `5_ML_Predictive_Analysis.ipynb`
+
+## Conclusion
+
+- The launch success rate has increased since 2013.
+- The success rate improved as the flight number increases in CCAFS SLC 40.
+- The site KSC LC-39A has the greatest landing success rate (76.9%).
+- Success rates for light payloads launches are higher than the heavy load ones.
+- Although few rockets were launched with more than 8,000 kg of Payload Mass, the most successful landing rates are for PO and ISS orbits.
+- The site VAFB SLC 4E does not have experience launching rockets with more than 10,000 kg of Payload Mass.
+- The orbits ES-L1, GEO, HEO and SSO have a perfect success rate. However, the most relevant is SSO because the other orbits had only one flight.
+- Launch sites can be close to railways, highways and coastlines. In contrast, they are far away from the cities.
+- For outcome prediction, SVM, KNN, Tree or Logistic Regression models can be used. They all have the same prediction accuracy (83.33%) for this dataset.
+
 
 
